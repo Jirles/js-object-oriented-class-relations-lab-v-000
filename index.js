@@ -25,5 +25,7 @@ class Passenger {
 class Trip {
   constructor(){
     this.id = ++tripID;
+
+    store.trips.push(this);
   }
 };
