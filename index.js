@@ -1,5 +1,6 @@
 let store = {drivers:[]};
 let driverID = 0;
+let passengerID = 0;
 
 class Driver {
   constructor(name){
@@ -12,5 +13,5 @@ class Driver {
 }
 
 class Passengers {
-  
+
 };
