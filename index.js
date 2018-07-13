@@ -10,3 +10,7 @@ class Driver {
   };
 
 }
+
+class Passengers {
+  
+};
