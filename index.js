@@ -30,6 +30,18 @@ class Passenger {
 
     store.passengers.push(this);
   };
+  trips(){
+    return store.trips.filter(trip => trip.passengerId === this.id)
+  };
+  passengers(){
+    // need to filter passengers based on their id in trips()
+    const passengers = [];
+    for(const trip of this.trips()) {
+      passengers.push(store.passengers.find(passenger => passenger.id === trip.passengerId))
+    };
+    return passengers;
+  };
+
 };
 
 class Trip {
