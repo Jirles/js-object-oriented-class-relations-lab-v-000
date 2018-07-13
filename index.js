@@ -33,7 +33,7 @@ class Passenger {
   trips(){
     return store.trips.filter(trip => trip.passengerId === this.id);
   };
-  passengers(){
+  drivers(){
     // need to filter passengers based on their id in trips()
     const drivers = [];
     for(const trip of this.trips()) {
