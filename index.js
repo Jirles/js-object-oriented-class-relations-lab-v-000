@@ -1,11 +1,11 @@
 let store = {drivers:[], passengers: [], trips: []};
-let driverID = 0;
-let passengerID = 0;
-let tripID = 0;
+let driverId = 0;
+let passengerId = 0;
+let tripId = 0;
 
 class Driver {
   constructor(name){
-    this.id = ++driverID;
+    this.id = ++driverId;
     this.name = name;
 
     store.drivers.push(this)
@@ -15,7 +15,7 @@ class Driver {
 
 class Passenger {
   constructor(name){
-    this.id = ++passengerID;
+    this.id = ++passengerId;
     this.name = name;
 
     store.passengers.push(this);
@@ -24,10 +24,10 @@ class Passenger {
 
 class Trip {
   constructor(driver, passenger){
-    this.id = ++tripID;
+    this.id = ++tripId;
     this.driverId = driver.id;
     this.passengerId = passenger.id;
-    
+
     store.trips.push(this);
   };
 };
