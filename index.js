@@ -19,7 +19,7 @@ class Driver {
     for(const trip in this.trips()) {
       passengers.push(store.passengers.find(passenger => passenger.id === trip.passengerId))
     }
-    return store.passengers.filter(passenger => passenger.id === trips.passenger.id)
+    return passengers;
   };
 };
 
