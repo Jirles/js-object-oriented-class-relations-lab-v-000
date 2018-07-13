@@ -15,10 +15,10 @@ class Driver {
   };
   passengers(){
     // need to filter passengers based on their id in trips()
-    const passengers = []
+    const passengers = [];
     for(const trip in this.trips()) {
       passengers.push(store.passengers.find(passenger => passenger.id === trip.passengerId))
-    }
+    };
     return passengers;
   };
 };
